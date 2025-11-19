@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Welcome to Our Lovely Shop</title>
-  <link rel="stylesheet" href="style.css" />
-  <img src="bannerpng"herf="banner.png"/>
+  <meta charset="UTF-8">
+  <title>soft- Skin Care</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
 <body>
+  
+<header>
+  <div id="logo"> <img src="img.png"> </div>
+  <h1>SOFT</h1>
   <nav>
-    <ul class="navbar">
-      <li><a href="#home" class="navlink">Home</a></li>
-      <li><a href="#ourproducts" class="navlink">Our Products</a></li>
-      <li><a href="#contactus" class="navlink">Contact Us</a></li>
-    </ul>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
+  
+<section id="home" class="section">
+  <img src="banner.png" id="banner" alt="banner">
+</section>
 
-  <section id="home" class="section">
-    <h1>Light Candles</h1>
-      <img src="logo"herf="logo.png"/>
-    <p>Welcome to our lovely shop where you can find beautifully crafted light candles for every occasion.</p>
+<section id="home" class="hero">
+  <h2>Your Skin Deserves the Best</h2>
+  <p>Soft is a Bahraini skin care brand that was established in 2020. By using our products we guarantee 
+<br> you the best healthy glowing skin. We're proud to say that our products are organic based, <br> so you could use them with no worries.</p>
+  <button id="shopBtn">Shop Now</button>
+</section>
 
 
-  <section id="ourproducts" class="section">
-    <h2>Our Products</h2>
-    <table>
-      <tr>
-        <td>image</d>
-      <td>candles</td>
-      <td>price</td>
-      </tr>
-    <ul>
-      <td>
-      <li><img src="image1"herf="image1.png"/></li>
-      <li>Lavender Relaxation Candle</li>
-      <li>2BD</li>
-      </td>
-      <td>
-      <li><img src="image2"herf="image2.png"/></li>
-      <li>Rose Petal Candle</li>
-      <li>5BD</li>
-      </td>
-      <td>
-      <li><img src="image3"herf="image3.png"/></li>
-      <li>Unscented Decorative Candle</li>
-      <li>3BD</li>
-      </td>
-    </ul>
-  </section>
-    
-  <section id="contactus" class="section">
-    <h2>Contact Us</h2>
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br /><br />
+<section id="products" class="products">
+  <h2>Our product</h2>
 
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+  <div class="product-list">
 
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="3" required></textarea><br /><br />
+    <div class="card">
+      <img src="orangscrub.png" alt="scrub1">
+      <h3>SCRUB</h3>
+      <p>Hydrates and softens your skin.</p>
+    </div>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    <div class="card">
+      <img src="coffeesurcb.png" alt="scrub2">
+      <h3>SCRUB</h3>
+      <p>Brightens your skin tone naturally.</p>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="card">
+      <img src="cherrysrub.png" alt="scrub3">
+      <h3>SCRUB</h3>
+      <p>Deep cleaning without irritation.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+
+  <form id="regForm" 
+  action="https://formspree.io/f/xyzlwred"
+  method="POST"
+>
+
+
+  <h1>Contact Us:</h1>
+
+  <div class="tab">Name:
+    <p><input placeholder="First name..."></p>
+    <p><input placeholder="Last name..."></p>
+  </div>
+
+  <div class="tab">Contact Info:
+    <p><input placeholder="E-mail..."></p>
+    <p><input placeholder="Phone..."></p>
+  </div>
+
+  <div class="tab">Birthday:
+    <p><input placeholder="dd"></p>
+    <p><input placeholder="mm"></p>
+    <p><input placeholder="yyyy"></p>
+  </div>
+
+  <div class="tab">Description:
+  <p><input placeholder="Description..." <textarea id="w3review" name="w3review" rows="4" cols="50"></p>
+  </div>
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:30px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+
+</form>
+</section>
+
+<footer>
+  <p>© 2025 SOFT — All Rights Reserved</p>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-whatsapp"></a>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
